@@ -15,9 +15,9 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 
 //Objects deleteFromObjectByKey(object, key) deletes `key` from a clone of object and returns the new object (it is non-destructive):
 function deleteFromObjectByKey(object, key) {
-  Object.assign({}, object, { [key]: value })
+  var cloneObject = Object.assign({}, object, { [key]: value })
   delete object[key]
-  return object
+  return cloneObject
 }
 
 function removeFromPlaylist(playlist,artistName){
