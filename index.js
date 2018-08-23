@@ -20,4 +20,4 @@ function deleteFromObjectByKey(object, key) {
   return cloneObject
 }
 
-
+//1) Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair:
