@@ -20,7 +20,4 @@ function deleteFromObjectByKey(object, key) {
   return cloneObject
 }
 
-function removeFromPlaylist(playlist,artistName){
-  delete playlist[artistName]
-  return playlist
-}
+
